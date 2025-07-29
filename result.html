@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forecast Result</title></head>
+<body>
+    <h2>Weather Forecast for <span th:text="${weather.city.name}"></span></h2>
+    <table border="1">
+        <tr><th>Date</th><th>Temp (°C)</th><th>Humidity (%)</th></tr>
+        <tr th:each="entry : ${weather.list}">
+            <td th:text="${entry.dt_txt}"></td>
+            <td th:text="${entry.main.temp}"></td>
+            <td th:text="${entry.main.humidity}"></td>
+        </tr>
+    </table>
+    <a href="/">Search another city</a>
+</body>
+</html>

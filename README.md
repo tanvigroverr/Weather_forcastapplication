@@ -1,4 +1,5 @@
-# Weather_forcastapplication
+# Weather Forecast Application
+
 ## 🌦️ Description
 This is a Spring Boot-based web application that fetches real-time weather data using the OpenWeatherMap API. It allows users to search for a city and view:
 - Current temperature
